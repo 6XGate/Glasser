@@ -1,0 +1,21 @@
+1.0.5 - 2008-Apr-19 15:39
+	* Replaced the method of getting the window handle, now any DOM node and be used.  Thanks to Canyonero for the method used to do this.
+	* Now the Visual C Runtime is not longer required.
+	* Added 1px extra padding to the bottom of the #nav-bar
+
+1.0.6 - 2008-Apr-20 17:26
+	* Added a new method to the XPCOM component that will use a C++ version of the old method of getting the HWND, hopefully to fix a crash with the mouse gestures extension.
+
+1.0.10 - 2008-Apr-25 18:26
+	NEW: Glasser will now remove it's overlay theme when the compositor is not enabled.
+	NEW: Glasser now has an tenative icon.
+
+1.1.0 BETA - don't remember
+	NEW: Glasser 1.1 for Firefox 3.1
+	NEW: Added shadows behind toolbar buttons
+	NEW: Added shadows behind menu text
+	FIXED: Weird bug in Firefox makes URL and search box look odd.
+	* Removed margin on identity box, it seems that it is no longer needed.
+
+1.1.1 BETA - 2009-Mar-12 19:03
+	FIXED: changes to nsIXULWindow caused the method used to get the window handle to break

@@ -1,0 +1,153 @@
+/******************************************************************************
+Copyright 2008 Matthew Holder. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+   1. Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimer.
+   2. Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation
+and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
+OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*********************************************************************************/
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+#main-window #minimize-button
+{
+	list-style-image: url(chrome://glasser/skin/Minimize.gif);
+}
+
+#main-window #restore-button
+{
+	list-style-image: url(chrome://glasser/skin/Restore.gif);
+}
+
+#main-window #close-button
+{
+	list-style-image: url(chrome://glasser/skin/Close.gif);
+}
+
+#main-window #navigator-toolbox
+{
+	-moz-appearance: none !important;
+	border: 0 none !important;
+	padding: 0 !important;
+}
+
+#main-window #navigator-toolbox toolbar
+{
+	-moz-appearance: toolbox !important;
+	border: 0 none !important;
+}
+
+#main-window #navigator-toolbox #toolbar-menubar,
+#main-window #navigator-toolbox #PersonalToolbar
+{
+	opacity: 0.99;
+}
+
+#main-window #navigator-toolbox #toolbar-menubar,
+#main-window #navigator-toolbox #toolbar-menubar menubar,
+#main-window #navigator-toolbox #nav-bar
+{
+	-moz-appearance: none !important;
+}
+
+/* More padding on nav-bar like IE */
+#main-window #nav-bar[iconsize="small"]
+{
+	padding-bottom: 5px !important;
+}
+
+#main-window #navigator-toolbox #toolbar-menubar,
+#main-window #navigator-toolbox toolbarbutton
+{
+	background-color: rgba(255, 255, 255, 0.0);
+	text-shadow: rgba(255, 255, 255, 0.5) 0px 0px 5px,
+		rgba(255, 255, 255, 0.5) 0px 0px 5px,
+		rgba(255, 255, 255, 0.5) 0px 0px 5px,
+		rgba(255, 255, 255, 0.5) 0px 0px 5px,
+		white 0px 0px 6px;
+	opacity: 0.99 !important;
+}
+
+#main-window:not([active="true"]) #navigator-toolbox #toolbar-menubar menubar > menu
+{
+	color: black !important;
+}
+
+#main-window #navigator-toolbox
+{
+	background-color: black !important;
+}
+
+#identity-box
+{
+	margin-left: 0 !important;
+	-moz-border-radius-topleft: 0 !important;
+	-moz-border-radius-bottomleft: 0 !important;
+	-moz-background-clip: padding !important;
+	border-left: 0 none !important;
+	border-top: 1px solid transparent!important;
+	border-bottom: 1px solid transparent !important;
+}
+
+#main-window #searchbar .searchbar-textbox,
+#main-window #urlbar
+{
+	-moz-background-clip: padding;
+	background-color: rgba(255, 255, 255, 0.75) !important;
+	opacity: 0.99 !important;
+	border: 3px solid white !important;
+	-moz-border-top-colors: rgba(255, 255, 255, 0.5) rgba(50, 50, 50, 0.7) rgba(255, 255, 255, 0.95) !important;
+	-moz-border-right-colors: rgba(255, 255, 255, 0.5) rgba(50, 50, 50, 0.3) rgba(255, 255, 255, 0.95)!important;
+	-moz-border-bottom-colors: rgba(255, 255, 255, 0.5) rgba(50, 50, 50, 0.3) rgba(255, 255, 255, 0.95)!important;
+	-moz-border-left-colors: rgba(255, 255, 255, 0.5) rgba(50, 50, 50, 0.7) rgba(255, 255, 255, 0.95)!important;
+	-moz-appearance: none !important;
+	-moz-border-radius: 3px !important;
+}
+
+#main-window #urlbar[level="high"] > .autocomplete-textbox-container,
+#main-window #urlbar[level="high"] > .autocomplete-history-dropmarker
+{
+	background-color: rgba(245, 246, 190, 0.65) !important;
+}
+
+#main-window #searchbar .searchbar-textbox[focused="true"],
+#main-window #urlbar[focused="true"]
+{
+	background-color: rgba(255, 255, 255, 0.99) !important;
+	-moz-border-top-colors: rgba(255, 255, 255, 0.5) rgba(50, 50, 50, 0.7) rgba(255, 255, 255, 0.99) !important;
+	-moz-border-right-colors: rgba(255, 255, 255, 0.5) rgba(50, 50, 50, 0.3) rgba(255, 255, 255, 0.99)!important;
+	-moz-border-bottom-colors: rgba(255, 255, 255, 0.5) rgba(50, 50, 50, 0.3) rgba(255, 255, 255, 0.99)!important;
+	-moz-border-left-colors: rgba(255, 255, 255, 0.5) rgba(50, 50, 50, 0.7) rgba(255, 255, 255, 0.99)!important;
+}
+
+#main-window #urlbar[level="high"][focused="true"] > .autocomplete-textbox-container,
+#main-window #urlbar[level="high"][focused="true"] > .autocomplete-history-dropmarker
+{
+	background-color: rgba(245, 246, 190, 0.99) !important;
+}
+
+#main-window #searchbar .searchbar-textbox:hover:not([focused="true"]),
+#main-window #urlbar:hover:not([focused="true"])
+{
+	background-color: rgba(255, 255, 255, 0.90) !important;
+}
+
+#main-window #urlbar[level="high"]:hover:not([focused="true"]) > .autocomplete-textbox-container,
+#main-window #urlbar[level="high"]:hover:not([focused="true"]) > .autocomplete-history-dropmarker
+{
+	background-color: rgba(245, 246, 190, 0.65) !important;
+}
