@@ -1,0 +1,3 @@
+content glasser chrome/content/
+overlay chrome://browser/content/browser.xul chrome://glasser/content/dwmoverlay.xul
+skin glasser classic/1.0 chrome/skin/classic/
